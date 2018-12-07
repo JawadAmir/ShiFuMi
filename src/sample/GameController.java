@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.text.Text;
 
-public class Controller {
+public class GameController {
 
     @FXML
     private Text scoreComputer;
@@ -45,8 +45,11 @@ public class Controller {
             textArea.appendText("Dommage vous avez PERDU\n");
             textArea.appendText("-------------------------------\n");
         }
-        else{
+        else if (joueur.score>ordinateur.score){
             textArea.appendText("Feliciation !! Vous avez gagné\n");
+            textArea.appendText("-------------------------------\n");
+        }else{
+            textArea.appendText("EGALITE\n");
             textArea.appendText("-------------------------------\n");
         }
 

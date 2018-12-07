@@ -10,8 +10,8 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("View.fxml"));
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("ViewMain.fxml"));
         primaryStage.setTitle("Shifumi");
         primaryStage.getIcons().add(new Image(String.valueOf(getClass().getResource("Images//Icon.jpg"))));
         primaryStage.setScene(new Scene(root));
